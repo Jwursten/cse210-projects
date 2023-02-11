@@ -11,10 +11,10 @@ public class Match
 
     public void DecideWin()
     {
-        Console.Writeline("Which team won? ");
+        Console.WriteLine("Which team won? ");
         Console.WriteLine($"1){_team1.GetTeamName()}");
         Console.WriteLine($"2){_team2.GetTeamName()}");
-        string winner = Console.ReadLIne();
+        string winner = Console.ReadLine();
         if (winner == "1")
         {
             _team1.AddWin();
